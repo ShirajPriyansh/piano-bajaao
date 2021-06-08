@@ -50,7 +50,7 @@ ul li{
 }
 
 li a {
-    display: inline-block;
+    display: block;
     color: white;
     text-decoration: none;
     padding: 12px 66px;
@@ -85,6 +85,21 @@ li a:hover {
 
 .divfoot a:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 995px) {
+    ul li {
+        float: none;
+    }
+    .nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .nav {
+        text-align: center;
+    }
 }
 
 

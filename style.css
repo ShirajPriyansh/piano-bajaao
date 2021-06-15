@@ -46,7 +46,7 @@ ul {
 }
 
 ul li{
-    float: left;
+    /* float: left; */
 }
 
 li a {

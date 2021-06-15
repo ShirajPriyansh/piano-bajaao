@@ -1,0 +1,40 @@
+.gridContainer {
+    /* display: grid; */
+}
+
+.left {
+    background: url(images/pianocover.jpg);
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.right {
+    /* background: url(images/.jpg); */
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+ }
+
+ .left .content {
+     background-color: rgba(200,200,200,0.4);
+     padding: 30% 10%;
+     font-family: 'Limelight', cursive;
+     font-size: 1.1rem;
+
+ }
+ .left a {
+     color: black;
+     text-decoration: none;
+ }
+.content:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+.left a:hover {
+    cursor:grabbing;
+}

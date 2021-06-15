@@ -1,7 +1,11 @@
-.gridContainer {
-    /* display: grid; */
-}
+/* .gridContainer {
+    display:flex;
+    height: 100%;
+} */
 
+body {
+    margin: 0;
+}
 .left {
     background: url(images/pianocover.jpg);
     width: 50%;
@@ -12,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
  }
 .right {
     /* background: url(images/.jpg); */
@@ -19,22 +24,73 @@
     position: absolute;
     right: 0px;
     height: 100%;
+    /* border: 1px solid black; */
  }
 
  .left .content {
-     background-color: rgba(200,200,200,0.4);
+     background-color: rgb(0,0,0, 0.3);
      padding: 30% 10%;
      font-family: 'Limelight', cursive;
      font-size: 1.1rem;
-
+     color: white;
  }
  .left a {
      color: black;
      text-decoration: none;
  }
 .content:hover {
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgb(0,0,0, 0.4);
 }
 .left a:hover {
-    cursor:grabbing;
+    cursor:grab;
 }
+.center {
+    text-align: center;
+}
+.center h1 {
+    margin: 30px;
+}
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.link {
+    background-color: rgb(0,0,0, 0.3);
+    padding: 20px;
+    transition: 0.8s;
+}
+.link:hover {
+    background-color: rgb(0,0,0, 0.5);
+}
+.link a {
+    display: block;
+    cursor:grab;
+}
+
+@media screen and (max-width: 824px) {
+    .left, .right {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .left .content {
+        padding: 10px 70px;
+        margin: 10px;
+        /* font-size: 0.8rem; */
+    }
+}
+@media screen and (max-width: 600px){
+    .left .content {
+        padding: 15px 7px;
+        margin: 10px;
+        background-color: rgb(0,0,0, 0.4);
+    }
+}
+/* @media only screen and (min-width: 568px){
+    .left .content {
+        padding: 10px 70px;
+        margin: 10px;
+    }
+} */

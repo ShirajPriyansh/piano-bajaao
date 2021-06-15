@@ -38,7 +38,7 @@ ul {
     background-color: rgb(0,0,0, 0.3);
     color: white;
     list-style-type:none;
-    position:fixed;
+    position:relative;
     width: 100%;
     overflow: hidden;
     margin: 0;
@@ -63,7 +63,16 @@ li a:hover {
     background-color: rgb(0,0,0, 0.6);
     padding: 12px 76px;
 }
-
+.about {
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+}
+.aside {
+    background-color: rgba(174, 205, 252, 0.8);
+    margin: auto;
+    max-width: 600px;
+    font-size: 1.7rem;
+}
 .divfoot {
     position: absolute;
     bottom: 0;
@@ -94,11 +103,17 @@ li a:hover {
     .nav {
         display: block;
     }
+    .aside {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 455px){
     .nav {
         text-align: center;
+    }
+    .aside {
+        font-size: 1.3rem;
     }
 }
 

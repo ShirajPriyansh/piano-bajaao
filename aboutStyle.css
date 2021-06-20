@@ -4,9 +4,15 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
-    background: no-repeat url(images/pianocover.jpg);
+    /* background: no-repeat url(images/pianocover.jpg);
+    background-size: cover; */
+    background: url(images/pianocover.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-
+  
+    
 }
 
 .border {
@@ -51,9 +57,9 @@ ul {
     padding: 0;
 }
 
-ul li{
-    /* float: left; */
-}
+/* ul li{
+    float: left;
+} */
 
 li a {
     display: block;
@@ -75,12 +81,18 @@ li a:hover {
     height: 73vh;
     text-align: center;
     font-family: 'Cutive Mono', monospace;
+    /* background-image: url(images/pianocover.jpg);
+    background-size: cover;
+    background-position: center; */
 }
 .aside {
     background-color: rgba(174, 205, 252, 0.8);
     margin: auto;
     max-width: 600px;
     font-size: 1.7rem;
+}
+.aside p {
+    margin: 10px auto;
 }
 .divfoot {
     display: flex;
@@ -92,9 +104,9 @@ li a:hover {
     width: 100%;
 }
 
-.divfoot footer {
+/* .divfoot footer {
   
-}
+} */
 
 .divfoot a {
     padding: 4px 16px;

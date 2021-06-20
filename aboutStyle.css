@@ -1,0 +1,133 @@
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: no-repeat url(images/pianocover.jpg);
+    background-size: cover;
+
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    color:white;
+    background-color: rgb(0,0,0, 0.3);
+    text-align: center;
+    
+}
+.border header {
+    /* margin: 0; */
+    flex-grow: 10;
+}
+.border header h1 {
+    font-size: 2.8rem;
+    padding: 30px;
+    margin: 0;
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    font-family: 'Limelight', cursive;
+}
+
+
+.border header h1:hover {
+    cursor: default;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    background-color: rgb(0,0,0, 0.3);
+    color: white;
+    list-style-type:none;
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    /* float: left; */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 66px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: .8s;
+}
+
+li a:hover {
+    background-color: rgb(0,0,0, 0.6);
+    padding: 12px 76px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    height: 73vh;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+}
+.aside {
+    background-color: rgba(174, 205, 252, 0.8);
+    margin: auto;
+    max-width: 600px;
+    font-size: 1.7rem;
+}
+.divfoot {
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+    background-color: rgb(0,0,0,0.3);
+    width: 100%;
+}
+
+.divfoot footer {
+  
+}
+
+.divfoot a {
+    padding: 4px 16px;
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+    margin: 0;
+}
+
+.divfoot a:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 995px) {
+    ul li {
+        float: none;
+    }
+    .nav {
+        display: block;
+    }
+    .aside {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .nav {
+        text-align: center;
+    }
+
+    .aside {
+        font-size: 1.3rem;
+    }
+}
+
+
+

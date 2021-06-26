@@ -19,6 +19,10 @@ body {
     
  }
 .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* background: url(images/.jpg); */
     width: 50%;
     position: absolute;
@@ -29,9 +33,9 @@ body {
 
  .left .content {
      background-color: rgb(0,0,0, 0.3);
-     padding: 30% 10%;
+     padding: 25vh 7vh;
      font-family: 'Limelight', cursive;
-     font-size: 1.1rem;
+     font-size: 3vh;
      color: white;
  }
  .left a {
@@ -48,17 +52,18 @@ body {
     text-align: center;
 }
 .center h1 {
-    margin: 30px;
+    margin: 1vh;
+    font-size: 4vh;
 }
 .grid {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 4vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
 .link {
     background-color: rgb(0,0,0, 0.3);
-    padding: 20px;
+    /* padding: 20px; */
     transition: 0.8s;
 }
 .link:hover {
@@ -67,8 +72,11 @@ body {
 .link a {
     display: block;
     cursor:grab;
+    padding: 1vh 20vw;
 }
-
+a img {
+    height: 8vh;
+}
 @media screen and (max-width: 824px) {
     .left, .right {
         position: relative;

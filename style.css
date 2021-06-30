@@ -53,10 +53,6 @@ ul {
     padding: 0;
 }
 
-ul li{
-    /* float: left; */
-}
-
 li a {
     display: block;
     color: white;
@@ -82,21 +78,18 @@ li a:hover {
     font-size: 1.7rem;
 }
 
-.form_section {
+/* .form_section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
-    
-    /* margin:auto; */
-    /* margin-top: 9%; */
     color: white;
 }
 form {
     width: 50vw;
     font-size: large;
     background-color: rgba(0, 0, 0, 0.6);
-    /* margin: 30px; */
+    
     padding: 20px;
     border: 1px solid lightgray;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -136,7 +129,7 @@ input[type="text"]:hover,
 fieldset:hover,
 input[type="submit"]:hover {
     border: 3px solid skyblue;
-}
+} */
 
 .divfoot {
     position: absolute;

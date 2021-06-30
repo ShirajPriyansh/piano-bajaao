@@ -4,58 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special</title>
-
+    <link rel="stylesheet" href="specialStyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <title>Special</title>
 </head>
 <body>
-    <div class="border">
-        <header>
-            <h1 class="animate__animated animate__fadeInDown">Piano Bajaao</h1>
-        </header>
-    </div>
-    
-    <div>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="special.html">Special</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="box box1">
 
-    <main>
-        <section class="form_section">
-            <!-- <div> -->
-                <form action="special.html">
-                    <h1>Special Request</h1>
-                    <h4>Hey, there If you have any special song demand now you can send us your request. We will
-                        try to complete it as soon as possible, thank you.
-                    </h4>
-                    <input type="text" name="song" id="song" placeholder="Song name">
-                    <fieldset>
-                        <legend>Type</legend>
-                        <input type="radio" name="type" id="type1">Solo
-                        <input type="radio" name="type" id="type2">With background music
-                    </fieldset>
-                    <input type="submit" value="Send">    
-                </form>
-            <!-- </div> -->
-        </section>
-    </main>
-
-    <div class="divfoot">
-        <footer  class="animate__animated animate__fadeInLeftBig">
-            <a href="#facebook"><img src="images/facebook.svg" alt="facebook icon"></a>
-            <a href="#instagram"><img src="images/instagram.svg" alt="instagram icon"></a>
-            <a href="https://youtube.com/channel/UCuZH3UEZuIkt2f9fRYmvN8g" target="_blank"><img src="images/youtube.svg" alt="youtube"></a>
-            <a href="#twitter"><img src="images/twitter.svg" alt="twitter"></a>
-        </footer>
+            <a href="index.html"  class="content animate__animated animate__fadeInLeft"><h1>Piano Bajaao</h1></a>
+            
+        </div>
+        <!-- <div class="box"> -->
+            <section class="box2">
+                    <form action="special.html" class="grid animate__animated animate__fadeInRight">
+                        <h1>Special Request</h1>
+                        <h4>Hey, there If you have any special song demand now you can send us your request. We will
+                            try to complete it as soon as possible, thank you.
+                        </h4>
+                        <input type="text" name="song" id="song" placeholder="Song name">
+                        <fieldset>
+                            <legend>Type</legend>
+                            <input type="radio" name="type" id="type1">Solo <br>
+                            <input type="radio" name="type" id="type2">With background music
+                        </fieldset>
+                        <input type="submit" value="Send">    
+                    </form>
+            </section>
+        <!-- </div> -->
     </div>
 </body>
 </html>
